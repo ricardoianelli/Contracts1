@@ -9,8 +9,7 @@ namespace Contracts1
     {
         static void Main(string[] args)
         {
-            try
-            {
+            try{
                 Console.WriteLine("- Enter contract data -");
                 Console.Write("Contract number: ");
                 int number = int.Parse(Console.ReadLine());
@@ -26,8 +25,7 @@ namespace Contracts1
                 service.generateInstallments();
 
                 Console.WriteLine("\nInstallments:");
-                foreach (Installment installment in contract.installments)
-                {
+                foreach (Installment installment in contract.installments){
                     Console.WriteLine(installment);
                 }
             }
